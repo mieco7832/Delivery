@@ -1,0 +1,240 @@
+@charset "ISO-8859-1";
+
+/* Container*/
+body {
+	margin: 0px;
+	box-sizing: border-box;
+	background-color: ghostwhite;
+	font-size: 36px;
+}
+
+div.container {
+	box-sizing: border-box;
+}
+
+.row::after {
+	content: "";
+	clear: both;
+	display: table;
+}
+
+[class^="col-"] {
+	text-align: center;
+	float: left;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	padding: 0px 0px 0px 0px;
+	min-height: 60px;
+	width: 100%;
+}
+
+.grids::after {
+	content: "";
+	clear: both;
+	display: table;
+}
+
+.grids div.grid {
+	text-align: center;
+	float: left;
+	min-height: 60px;
+}
+
+/*
+  Sidebar
+*/
+.sidebar {
+	position: fixed;
+	margin-top: 0px;
+	margin-left: 0px;
+	padding: 0;
+	width: 40%;
+	height: 100%;
+	background-color: aliceblue;
+	overflow: auto;
+	border-right: solid 1px #ccc;
+	z-index: 2;
+	display: none;
+}
+
+.sidebar a {
+	display: block;
+	color: #595959;
+	padding: 16px;
+	text-decoration: none;
+}
+
+.sidebar div.company {
+	padding: 25px;
+	display: block;
+	text-align: center;
+	width: 96px;
+}
+
+.sidebar div.company img {
+	width: 100%;
+	margin-left: 30px;
+	display: block;
+}
+
+.sidebar div.sesion {
+	width: 100%;
+	position: absolute;
+	bottom: 0px;
+}
+
+.sidebar div.profile p {
+	text-align: center;
+}
+
+.sidebar .active {
+	background-color: #595959;
+	color: aliceblue;
+}
+
+.sidebar a:hover:not(.active ) {
+	background-color: #595959;
+	color: aliceblue;
+}
+
+div.content {
+	margin-left: 0px;
+	padding: 120px 16px;
+}
+
+/*
+ *	Navbar
+*/
+header {
+	z-index: 1;
+	position: fixed;
+	overflow: hidden;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 120px;
+	display: block;
+	background-color: aliceblue;
+	border-bottom: 1px solid #ccc;
+}
+
+header div.btn {
+	margin: 0px 0px 0px 5px;
+	display: block;
+}
+
+div.btn img {
+	display: block;
+	margin: 0px;
+	padding: 0px 45%;
+	width: 116px;
+	height: 116px;
+}
+
+div.btn p {
+	display: block;
+	padding: 19px;
+	background: aliceblue;
+	color: #595959;
+	margin: 0px;
+}
+
+div.btn a {
+	display: block;
+	padding: 19px;
+	background: aliceblue;
+	color: #595959;
+}
+
+/* Title*/
+header div.title {
+	display: none
+}
+
+/* Navbar */
+header div.navbar {
+	display: none;
+}
+
+/* input */
+
+input[type=text], [type=number], [type=email], [type=password], [type=tel],
+	[type=url] {
+	font-size: 22px;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	height: 4pc;
+	padding-left: 3px;
+	border-radius: 2px;
+	border: 2px solid #555;
+}
+
+/* Field*/
+
+.field {
+	position: relative;
+	margin-top: 60px;
+}
+
+/*Input tipo buscador*/
+input[type=search] {
+	font-size: 22px;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	width: 25%;
+	height: 4pc;
+	padding-left: 3px;
+	border-radius: 2px;
+	border: 2px solid #555;
+	transition: width 0.4s ease-in-out;
+}
+
+/*Checkbox */ /*Radio */
+.checkcontent {
+  padding-left: 55px;
+  margin-bottom: 0px;
+  font-size: 36px;
+  user-select: none;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+input[type=checkbox]{
+	width: 25%;
+	height: 4pc;
+}
+
+/*Select*/
+
+select {
+	position: relative;
+	font-size: 22px;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	border: 2px solid #555;
+	left: 0;
+	height: 4pc;
+	width: 90%;
+}
+
+/*Buton*/
+input[type=button], [type=submit], [type=reset] {
+	width:auto;
+	background-color: aliceblue;
+	border: none;
+	color: #595959;
+	padding: 22px 48px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 42px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+button {
+	background-color: aliceblue;
+	border: none;
+	color: #595959;
+	padding: 22px 48px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 42px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}

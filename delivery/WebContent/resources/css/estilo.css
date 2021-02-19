@@ -1,0 +1,405 @@
+@charset "ISO-8859-1";
+
+/* Card */
+div.card {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	transition: 0.3s;
+	border-radius: 5px;
+	background-color: white;
+	min-height: inherit;
+}
+
+div.card img.picture {
+	width: 100%;
+	transition: 0.3s;
+	border-radius: 5px 5px 0px 0px;
+}
+
+div.card p, h1, h2, h3, h4, h5 {
+	width: 100%;
+	text-align: left;
+}
+
+div.card table {
+	width: 98%;
+	text-align: center;
+}
+
+/* Table */
+table {
+	border-collapse: collapse;
+	width: 100%;
+	overflow-x: auto;
+	max-height: 300px;
+}
+
+tr {
+	height: max-content;
+}
+
+th {
+	text-align: center;
+}
+
+th, td {
+	padding: 8px;
+}
+
+th, td {
+	border: 1px solid #ddd;
+}
+
+table.h-div th, td {
+	border: none;
+	border-bottom: 1px solid #ddd;
+}
+
+.striped tr:nth-child(even) {
+	background-color: #f2f2f2;
+}
+
+.hoverable tr:hover {
+	background-color: #f5f5f5;
+}
+
+/*
+ * Modal
+*/
+.modal {
+	display: none;
+	position: fixed;
+	z-index: 1;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	background-color: rgb(0, 0, 0);
+	background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+	background-color: #fefefe;
+	margin: 15% auto; /* 15% from the top and centered */
+	padding: 20px;
+	border: 1px solid #888;
+	width: 80%; 
+}
+
+.modal-header {
+	padding: 2px 16px;
+	background-color: ghostwhite;
+	color: #ccc;
+}
+
+/* Modal Body */
+.modal-body {
+	padding: 2px 16px;
+	background-color: white;
+}
+
+/* Modal Footer */
+.modal-footer {
+	padding: 2px 16px;
+	background-color: ghostwhite;
+	color: #ccc;
+}
+
+.close {
+	color: #aaa;
+	float: right;
+	font-size: 28px;
+	font-weight: bold;
+}
+
+.close:hover, .close:focus {
+	color: black;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+
+button:hover {
+	background-color: #595959;
+	color: aliceblue;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
+	cursor: pointer;
+}
+
+button:active{
+	color: white;
+	background-color: steelblue;
+	box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.2);
+}
+
+/* 
+ *	Input field
+ */
+
+/* Field */
+div.field{
+	display: inline-flex;
+	table-layout: fixed;
+	width: 100%;
+	height: 60px;
+}
+
+div.field input,div.field label{
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+}
+
+.field label{
+ 	position: absolute;
+	top: 10px;
+	left: 20px;
+	color: #999;
+	cursor: text;
+	transition: all .15s ease-in-out 0s;
+}
+.field label.checkcontent{
+ 	position: absolute;
+	top: 5px;
+	left: 20px;
+	color: #999;
+	cursor: text;
+	transition: all .15s ease-in-out 0s;
+}
+
+.field input[type=text]:focus ~ label,
+.field input[type=text]:valid ~ label{
+	top: -1.5em;
+	left: 20px;
+	font-size: .8em;
+	font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	color: #595959;
+	cursor: context-menu;
+}
+.field input[type=password]:focus ~ label,
+.field input[type=password]:valid ~ label{
+	top: -1.5em;
+	left: 20px;
+	font-size: .8em;
+	font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	color: #595959;
+	cursor: context-menu;
+}
+/*Input */
+input, textArea {
+	width: 90%;
+}
+
+input[type=text]:focus {
+	border: 2px solid steelblue;
+}
+
+input[type=number]:focus {
+	border: 2px solid steelblue;
+}
+
+input[type=email]:focus {
+	border: 2px solid steelblue;
+}
+
+input[type=password]:focus {
+	border: 2px solid steelblue;
+}
+
+input[type=tel]:focus {
+	border: 2px solid steelblue;
+}
+
+input[type=url]:focus {
+	border: 2px solid steelblue;
+}
+
+input[type=search]:focus {
+	border: 2px solid steelblue;
+	width: 90%;
+}
+
+/* Input Texarea */
+textarea {
+	font-size: 1rem;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	padding-left: 3px;
+	border-radius: 5px;
+	border: 2px solid #555;
+	resize: none;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+textarea:focus {
+	border: 2px solid steelblue;
+}
+
+input:invalid:after {
+	border-color: lightcoral;
+}
+
+input:valid:after {
+	border-color: lightgreen;
+}
+
+
+/****************************** Tiempo ***************************************/
+
+/*Date*/
+input[type=date] {
+	font-size: 1rem;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	height: 2pc;
+	height: 2pc;
+	padding-left: 3px;
+	border-radius: 2px;
+	border: 2px solid #555;
+}
+
+input[type=date]:focus {
+	border: 2px solid steelblue;
+}
+
+input[type=button]:hover {
+	background-color: #595959;
+	color: aliceblue;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
+	cursor: pointer;
+}
+
+input[type=button]:active {
+	color: white;
+	background-color: steelblue;
+	box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.2);
+}
+
+input[type=submit]:hover {
+	background-color: #595959;
+	color: aliceblue;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
+	cursor: pointer;
+}
+
+input[type=submit]:active {
+	color: white;
+	background-color: steelblue;
+	box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.2);
+}
+
+input[type=reset]:hover {
+	background-color: #595959;
+	color: aliceblue;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
+	cursor: pointer;
+}
+
+input[type=reset]:active {
+	color: white;
+	background-color: steelblue;
+	box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.2);
+}
+
+/* Colores */
+.color-white {
+	color: white;
+}
+
+/* Background */
+.bg-white {
+	background-color: white;
+}
+
+.bg-lightgray {
+	background-color: lightgray;
+}
+
+.bg-aliceblue {
+	background-color: aliceblue;
+}
+
+.bg-tomato {
+	background-color: tomato;
+}
+
+div.dropdown {
+	position: relative;
+	display: inline-block;
+	margin: 0px;
+}
+
+div.dropdown button {
+	padding: 10px 10px 10px 10px;
+	font-size: 22px;
+	text-decoration: none;
+	background-color: aliceblue;
+	color: #595959;
+	border: none;
+	cursor: pointer;
+	box-shadow: 3px 6px 5px 0px rgba(0, 0, 0, 0.2);
+}
+
+div.dropdown div.dropdown-content {
+	display: none;
+	position: fixed;
+	min-width: 160px;
+	max-width: min-content;
+	margin: 0px;
+	box-shadow: 3px 6px 5px 0px rgba(0, 0, 0, 0.2);
+}
+
+div.dropdown div.dropdown-content a {
+	margin: 0px;
+	padding: 10px 10px 10px 10px;
+	font-size: 22px;
+	text-decoration: none;
+	display: block;
+}
+
+div.dropdown:hover div.dropdown-content {
+	display: block;
+}
+
+div.dropdown div.dropdown-content a:hover {
+	color: aliceblue;
+	background-color: #595959;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+	font-family: sans-serif;
+	color: #595959;
+}
+
+.clic:hover {
+	cursor: pointer;
+}
+
+.bolder {
+	font-weight: bold;
+}
+
+div.hoverable:hover {
+	box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.75);
+}
+
+.borde:last-child {
+	border: 1px solid white;
+}
+
+.left p, .left h1, .left h2, .left h3, .left h4, .left h5, .left h6 {
+	text-align: left;
+}
+
+.right p, .right h1, .right h2, .right h3, .right h4, .right h5, .right h6
+	{
+	text-align: right;
+}
+
+.center p, .center h1, .center h2, .center h3, .center h4, .center h5,
+	.center h6 {
+	text-align: center;
+}
+
+.just p, .just h1, .just h2, .just h3, .just h4, .just h5, .just h6 {
+	text-align: justify;
+}
